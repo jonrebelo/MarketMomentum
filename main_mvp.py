@@ -154,7 +154,7 @@ if st.session_state['page'] == 'Custom Report':
     for option in selected_options:
             # If the option is 'Monthly Heatmap Graph', display it in a full-width container
             if option == 'Monthly Heatmap Graph':
-                fig = graph_functions[option](stock)
+                fig = graph_functions[option](stock, symbol)
                 if fig is not None:
                     st.plotly_chart(fig)
                     # Convert the figure to HTML and store it in the dictionary

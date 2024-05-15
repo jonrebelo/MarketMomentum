@@ -402,7 +402,7 @@ def plot_log_returns(stock, symbol, benchmark=None, benchmark_symbol='Benchmark'
 
     return fig
 
-def plot_monthly_heatmap(stock):
+def plot_monthly_heatmap(stock, symbol):
     """
     Plots the monthly heatmap of returns for a given stock.
     """
@@ -456,7 +456,7 @@ def plot_monthly_heatmap(stock):
 
     # Update layout for better visualization
     layout = go.Layout(
-        title='Monthly Returns Heatmap for MSFT',
+        title=f'Monthly Returns Heatmap for {symbol}',
         xaxis_title='Month',
         yaxis_title='Year',
         width = 1280,
