@@ -70,6 +70,7 @@ The application can handle the following errors:
 ## Future Development (V2)
 
 The current version (V1) is complete. For the next version (V2), we aim to enhance the functionality:
+
 ## Metric Descriptions
 
 These descriptions should be added as tooltips for each metric when the user hovers over them:
@@ -107,44 +108,9 @@ These descriptions should be added as tooltips for each metric when the user hov
 31. `CPC Index`: A measure of the robustness of a strategy, defined as the product of the Probabilistic Sharpe Ratio and the Profit Factor.
 32. `Risk of Ruin`: The probability of an investment depleting to a specified level.
 33. `Common Sense Ratio`: A ratio used to analyze the performance of an investment by comparing the expected return and the maximum drawdown.
+34. `Cumulative Return`: The total return on an investment.
 
-## Metric Descriptions
-
-Here are the descriptions listed with numbers for easier reference that should be added as the user hovers over each object:
-
-1. `Cumulative Return`: The total return on an investment.
-2. `CAGR`: Compound Annual Growth Rate, the mean annual growth rate of an investment over a specified period of time longer than one year.
-3. `Sharpe`: The Sharpe ratio, a measure of risk-adjusted return.
-4. `Prob. Sharpe Ratio`: The Probabilistic Sharpe Ratio, a measure of the probability that the expected Sharpe ratio of a strategy is greater than a benchmark Sharpe ratio.
-5. `Smart Sharpe`: A variation of the Sharpe ratio that attempts to adjust for skewness and kurtosis in the returns distribution.
-6. `Sortino`: The Sortino ratio, a variation of the Sharpe ratio that only factors in downside risk.
-7. `Smart Sortino`: A variation of the Sortino ratio that attempts to adjust for skewness and kurtosis in the returns distribution.
-8. `Sortino/√2`: The Sortino ratio divided by the square root of 2, a normalization technique.
-9. `Smart Sortino/√2`: The Smart Sortino ratio divided by the square root of 2, a normalization technique.
-10. `Max Drawdown`: The maximum observed loss from a peak to a trough of a portfolio, before a new peak is attained.
-11. `Volatility (ann.)`: The annualized standard deviation of returns, a measure of risk.
-12. `Calmar`: The Calmar ratio, a comparison of the average annual compounded rate of return and the maximum drawdown risk.
-13. `Skew`: A measure of the asymmetry of the probability distribution of returns.
-14. `Kurtosis`: A measure of the "tailedness" of the probability distribution of returns.
-15. `Expected Daily`: The expected daily return.
-16. `Expected Monthly`: The expected monthly return.
-17. `Expected Yearly`: The expected yearly return.
-18. `Best Day`: The best single-day return.
-19. `Worst Day`: The worst single-day return.
-20. `Best Month`: The best single-month return.
-21. `Worst Month`: The worst single-month return.
-22. `Recovery Factor`: The ratio of total return to maximum drawdown.
-23. `Ulcer Index`: A measure of the depth and duration of drawdowns in prices.
-24. `Worst Year`: The worst single-year return.
-25. `Best Year`: The best single-year return.
-26. `Payoff Ratio`: The ratio of the average winning trade to the average losing trade.
-27. `Profit Factor`: The ratio of gross profit to gross loss.
-28. `Common Sense Ratio`: A ratio used to analyze the performance of an investment by comparing the expected return and the maximum drawdown.
-29. `CPC Index`: A measure of the robustness of a strategy, defined as the product of the Probabilistic Sharpe Ratio and the Profit Factor.
-30. `Risk of Ruin`: The probability of an investment depleting to a specified level.
-31. `Daily Value-at-Risk`: The estimated maximum amount that the investment is likely to lose in one day with a certain probability.
-32. `Gain/Pain Ratio`: The total of all monthly gains divided by the absolute total of all monthly losses.
-33. `Tail Ratio`: The ratio of the average return of the 10% of months with the highest returns to the average return of the 10% of months with the lowest returns.
+## LLM Implementation
 
 We aim to incorporating Natural Language Processing (NLP) techniques to generate a detailed analysis of the stock data. While the `quantstats` package is already utilized to analyze stock data and produce various graphs and tables, it lacks the capability to automatically generate a comprehensive narrative analysis. To address this, we plan to integrate NLP libraries such as `nltk` or `spaCy`, enabling the system to generate insightful sentences based on the analyzed data.
 
